@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.centre{
+    display: block;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+.left{
+    float: left;
+    display: inline-block;
+}
+.right{
+    float: right;
+    display: inline-block;
+}
+
+
+header{
+    height: 90px;
+}
+#logo{
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+#otherlogo{
+    margin-left: 20px;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    box-shadow: -2px 0 black;
+}
+header a:link, header a:visited{
+    color: brown;
+    text-decoration: none;
+}
+#menubar{
+    height: 60px;
+    float: right;
+    margin-right: 5px;
+}
+.menu{
+    height: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 35px 20px 35px 20px;
+    text-align: center;
+    margin-right: -5px;
+}
+.menu:hover{
+    opacity: 75%;
+    background: black;
+    color: mintcream;
+}
+#home{
+    color: mintcream;
+    background: brown;
+    font-weight: bold;
+    opacity: 100%;
+}
+#home:hover{
+    opacity: 90%;
+}
+#unreal:hover{
+    opacity: 75%;
+    background: black;
+    color: mintcream;
+}
+#amazon:hover{
+    opacity: 75%;
+    background: purple;
+    color: mintcream;
+}
+#cry:hover{
+    opacity: 75%;
+    background: gray;
+    color: mintcream;
+}
+#unity{
+    color: mintcream;
+    background: black;
+    opacity: 100%;
+}
+#unity:hover{
+    opacity: 75%;
+    background: black;
+    color: mintcream;
+}
+
+
+#unitybg{
+    margin: 0;
+    object-fit: cover;
+    height: 570px;
+    background-image: url("../Assets/unity.png");
+    padding-top: 100px;
+    background-attachment: fixed;
+    animation: textanimation 2s ease-in-out;
+}
+@keyframes textanimation{
+    0%{
+        letter-spacing: 20px;
+
+    }
+    100%{
+        letter-spacing: 1px; 
+    }
+}
+#unityrect{
+    float: inside;
+    height: 150px;
+    padding-top: 115px;
+    font: 120px BattleLines;
+    text-align: center;
+    color: mintcream;
+}
+
+
+#introduction{
+    background: url("../Assets/unityintro.jpg");
+    height: 800px;
+    color: mintcream;
+    background-attachment: fixed;
+}
+.subheading{
+    float: left;
+    height: 150px;
+    font: 120px BattleLines;
+    text-align: left;
+}
+#content{
+    float: left;
+    height: 150px;
+    font-style: italic;
+    font: 20px "Vesper Libre";
+    text-align: left;
+}
+#content a:link, #content a:visited{
+    color: mintcream;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contentface{
+    font: 20px "Road Rage";
+}
+
+#description{
+    background: url("../Assets/unitydesc.jpg");
+    height: 800px;
+    color: mintcream;
+    background-attachment: fixed;
+}
+#desccontent{
+    float: left;
+    height: 150px;
+    font-style: italic;
+    font: 40px "Road Rage";
+    text-align: left;
+}
+#desccontent a:link, #desccontent a:visited{
+    color: mintcream;
+    text-decoration: none;
+}
