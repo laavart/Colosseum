@@ -11,7 +11,7 @@ function Speak(TEXT) {
 
 Speak("Hello! Gamers,");
 Speak("Welcome to Colosseum ");
-Speak("say Start to Begin");
+Speak("say go to begin");
 
 function startListening() {
     recog.continuous = true;//
@@ -22,7 +22,7 @@ function startListening() {
     recog.onresult = function (data){
         let text = data.results[0][0].transcript;
         text = text.toLowerCase();
-        if (text.includes("start")) {
+        if (text.includes("go")) {
             window.location.replace("Pages/home.html");
         }
         else Speak("Sorry I can't get you!");
