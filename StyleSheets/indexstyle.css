@@ -33,7 +33,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-box-reflect: below 1px linear-gradient(#0001,#0004);
 }
 .container .loader{
     position: relative;
@@ -43,14 +42,6 @@ body{
     background: #0d2323;
     animation:animate 2s linear infinite;
 }
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
 .container .loader::before{
     content: '';
     position: absolute;
@@ -58,9 +49,8 @@ body{
     left:0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to top,transparent,rgba(0,255,249,0.4));
     background-size: 100px 180px;
-    background-repeat: no-repeat;
+    background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4)) no-repeat;
     border-top-left-radius:100px ;
     border-bottom-left-radius:100px ;
 }
@@ -196,10 +186,9 @@ header a:link, header a:visited{
 
 
 #introduction{
-    background: url("../Assets/intro.jpg");
     height: 800px;
     color: mintcream;
-    background-attachment: fixed;
+    background: url("../Assets/intro.jpg") fixed;
 }
 .subheading{
     float: left;
@@ -232,10 +221,9 @@ header a:link, header a:visited{
 
 #gameengines{
 
-    background: url("../Assets/gaen.jpg");
     height: 800px;
     color: mintcream;
-    background-attachment: fixed;
+    background: url("../Assets/gaen.jpg") fixed;
 
 }
 
