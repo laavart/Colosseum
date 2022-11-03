@@ -105,7 +105,6 @@ header a:link, header a:visited{
 @keyframes textanimation{
     0%{
         letter-spacing: 20px;
-
     }
     100%{
         letter-spacing: 1px; 
